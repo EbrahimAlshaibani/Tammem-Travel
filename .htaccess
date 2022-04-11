@@ -1,0 +1,6 @@
+# Not Allowed access & 404
+ErrorDocument 404 /404.html
+
+# Linux URL Case Insensitive
+#CheckSpelling on
+#CheckCaseOnly on
