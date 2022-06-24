@@ -40,16 +40,13 @@ h1, h2, h3, h4, h5, h6,
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
-  transition: .3s all ease; }
+  transition: .3s all ease; 
+scroll-behavior: smooth;
+
+}
   a, a:hover {
     text-decoration: none !important; }
 
-.hero {
-  height: 100vh;
-  width: 100%;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat; }
 
 .site-navbar-wrap {
   position: absolute;
@@ -59,7 +56,7 @@ a {
   .site-navbar-wrap a {
     color: #fff; }
   .site-navbar-wrap .site-navbar-top {
-    font-size: 1.5rem; }
+    font-size: 0.8rem; }
 
 .site-navbar-top {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
@@ -368,8 +365,95 @@ a {
 
 
 
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; 
+}
 /* crousel */
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 100hv;
+  position: relative;
+  margin: auto;
+}
 
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.mySlides img{
+  height: 500px;
+  
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(119, 119, 119, 0.2);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.myactive, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.myfade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
 
 
 
@@ -377,42 +461,48 @@ a {
 
 
 /*media*/
-.row {
-  display: -ms-flexbox; /* IE10 */
+.center{
+  padding-top: 120px;
+  padding-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #1d90d3;
+}
+.row{
   display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.gallery {
+  margin: 5px;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  float: left;
+  width: 180px;
+  transition-duration: 0.1s;
 }
 
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 33.3%; /* IE10 */
-  flex: 33.3%;
-  max-width: 233.35%;
-  padding: 0 4px;
+div.gallery:hover {
+  border: 5px solid rgb(255, 255, 255);
 }
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
+div.gallery img {
   width: 100%;
+  height: auto;
+  padding: 10px;
+  border-radius: 50px;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
+div.desc {
+  color: white;
+  padding: 15px;
+  text-align: center;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
+.mytitle{
+  text-align: center;
+  color: white;
+  background-color: #1d90d3;
+  padding: 5px;
 }
