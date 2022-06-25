@@ -338,7 +338,7 @@ background-color: var(--white-color); }
     -o-transition: .3s all ease;
     transition: .3s all ease; }
     .sticky-wrapper .site-navbar ul li.active a {
-      color: #fff; }
+      color: var(--secound-color); }
   .sticky-wrapper.is-sticky .site-navbar {
     background-color: var(--white-color); }
     .sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu > li {
@@ -352,14 +352,14 @@ background-color: var(--white-color); }
         padding-right: 20px; }
       .sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu > li > a {
         padding: 10px 10px;
-        color: rgba(255, 255, 255, 0.6);
+        color: var(--main-color);
         font-size: 15px; }
         .sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu > li > a:hover {
-          color: #fff !important; }
+          color: var(--secound-color) !important; }
         .sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu > li > a.active {
-          color: #fff !important; }
+          color: var(--secound-color) !important; }
       .sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu > li.active a {
-        color: #fff; }
+        color: var(--secound-color); }
 .tammem-icon{
   height: 60px;
   position: relative;
