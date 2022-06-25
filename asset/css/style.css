@@ -59,7 +59,7 @@ scroll-behavior: smooth;
     font-size: 0.8rem; }
 
 .site-navbar-top {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
+  border-bottom: 1px solid rgba(0, 162, 255, 0.4); }
 
 .site-navbar {
   margin-bottom: 0px;
@@ -359,7 +359,7 @@ scroll-behavior: smooth;
       .sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu > li.active a {
         color: #fff; }
 .tammem-icon{
-  height: 40px;
+  height: 60px;
   position: relative;
 }
 
@@ -461,12 +461,30 @@ scroll-behavior: smooth;
 
 
 /*media*/
+.icon-whatsapp{
+  color: var(--main-color);
+}
+.icon-facebook{
+  color: var(--main-color);
+}
+.icon-wechat{
+  color: var(--main-color);
+}
+.icon-instagram{
+  color: var(--main-color);
+}
+.icon-phone{
+  color: var(--main-color);
+}
+.icon-envelope{
+  color: var(--main-color);
+}
 .center{
   padding-top: 120px;
   padding-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #1d90d3;
+  background-color: var(--white-color);
 }
 .row{
   display: flex;
@@ -476,15 +494,15 @@ scroll-behavior: smooth;
 }
 div.gallery {
   margin: 5px;
-  border: 3px solid rgb(255, 255, 255);
+  border: 3px solid var(--main-color);
   border-radius: 10px;
   float: left;
-  width: 180px;
+  width: 140px;
   transition-duration: 0.1s;
 }
 
 div.gallery:hover {
-  border: 5px solid rgb(255, 255, 255);
+  border: 5px solid var(--main-color);
 }
 
 div.gallery img {
@@ -495,14 +513,14 @@ div.gallery img {
 }
 
 div.desc {
-  color: white;
+  color: var(--black-color);
   padding: 15px;
   text-align: center;
 }
 
 .mytitle{
   text-align: center;
-  color: white;
-  background-color: #1d90d3;
+  color: var(--main-color);
+  background-color: var(--white-color);
   padding: 5px;
 }
