@@ -458,11 +458,6 @@ background-color: var(--white-color); }
   .prev, .next,.text {font-size: 11px}
 }
 
-
-
-
-
-
 /*media*/
 .icon-whatsapp{
   color: var(--main-color);
@@ -485,48 +480,94 @@ background-color: var(--white-color); }
 .icon-menu{
   color: var(--main-color);
 }
-.center{
-  padding-top: 120px;
-  padding-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: var(--white-color);
-}
-.row{
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-div.gallery {
-  margin: 5px;
-  border: 3px solid var(--main-color);
-  border-radius: 10px;
-  float: left;
-  width: 140px;
-  transition-duration: 0.1s;
-}
-
-div.gallery:hover {
-  border: 5px solid var(--main-color);
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-  padding: 10px;
-  border-radius: 50px;
-}
-
-div.desc {
-  color: var(--black-color);
-  padding: 15px;
-  text-align: center;
-}
-
 .mytitle{
   text-align: center;
   color: var(--main-color);
   background-color: var(--white-color);
   padding: 5px;
+} 
+.myContainer{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.columnn {
+  float: left;
+  width: 25%;
+  max-width: 220px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  transition: 0.4s ease;
+}
+.card:hover {
+  box-shadow: 0 8px 8px 0 rgba(24,144, 211, 0.5);
+  box-shadow: 1px 1px 2px rgba(24,144, 211, 0.5), 0 0 25px rgba(24,144, 211, 0.5), 0 0 5px rgba(24,144, 211, 0.5);
+}
+.card img{
+  width: 100%;
+  border-radius: 50px;
+  padding: 10px;
+
+}
+.card h2{
+  text-align: center;
+  font-size: 24px;
+  margin: 10px;
+  }
+.myContainer h2{
+  text-align: center;
+  color: var(--main-color);
+}
+.containera {
+  padding: 0 16px;
+}
+.containera::after, .roww::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 650px) {
+ 
+}
+
+@media screen and (max-width: 800px) {
+  .columnn {
+    width: 33.3%;
+    display: block;
+  }
+  .myContainer{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .card h2{
+    font-size: 18px;
+  }
+  .card img{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .columnn {
+    width: 50%;
+    display: block;
+  }
+  .myContainer{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .card img{
+    width: 80%;
+    margin-left: 10%;
+    margin-left: 10%;
+    border-radius: 30px;
+  }
 }

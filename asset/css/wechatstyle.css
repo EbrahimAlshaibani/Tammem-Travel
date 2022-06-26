@@ -1,0 +1,79 @@
+
+
+  .wcolumnn {
+    float: left;
+    width: 50%;
+    max-width: 350px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    padding: 0 8px;
+  }
+  .wmyContainer h2{
+    text-align: center;
+    color:rgba(24,144, 211) ;
+  }
+  .wcard {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    transition: 0.4s ease;
+  }
+  .wcard:hover {
+    box-shadow: 0 8px 8px 0 rgba(24,144, 211, 0.5);
+    box-shadow: 1px 1px 2px rgba(24,144, 211, 0.5), 0 0 25px rgba(24,144, 211, 0.5), 0 0 5px rgba(24,144, 211, 0.5);
+  }
+  .wcard img{
+    width: 100%;
+    padding: 10px;
+  
+  }
+  .wcard h2{
+    text-align: center;
+    font-size: 24px;
+    margin: 10px;
+    }
+  
+  .wcontainera {
+    padding: 0 16px;
+  }
+  .wcontainera::after, .roww::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .wcolumnn {
+        width: 100%;
+      }
+
+      .wcard img{
+        width: 100%;
+      }
+
+  }
+  
+  @media screen and (max-width: 800px) {
+    .wcolumnn {
+      width: 33.3%;
+      display: block;
+    }
+
+    .wcard h2{
+      font-size: 18px;
+    }
+    .wcard img{
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .wcolumnn {
+      display: block;
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    .wcard img{
+      width: 100%;
+    }
+  }
