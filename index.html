@@ -325,7 +325,7 @@
 
 
 
-
+  <button id="scrollToTopBtn" class="icon-arrow-up"></button>
     <!-- footer -->
     <footer class="footer">
       <div class="container">
@@ -385,58 +385,56 @@
     <script src="asset/js/jquery.sticky.js"></script>
     <script src="asset/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script><!-- Chrome, Firefox OS and Opera -->
-
-    <script>
-      $(document).ready(function(){
-        $('.customer-logos').slick({
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 1500,
-          arrows: false,
-          dots: false,
-          pauseOnHover: false,
-          responsive: [{
-            breakpoint: 768,
-            setting: {
-              slidesToShow: 4
-            }
-          }, {
-            breakpoint: 520,
-            setting: {
-              slidesToShow: 2
-            }
-          }]
-        });
+    <script>$(document).ready(function(){
+      $('.customer-logos').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+        breakpoint: 768,
+        setting: {
+          slidesToShow: 4
+        }
+        }, {
+        breakpoint: 520,
+        setting: {
+          slidesToShow: 2
+        }
+        }]
       });
-    </script>
-    <script>
-      let slideIndex = 1;
-      showSlides(slideIndex);
-      
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-      
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-      
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" myactive", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " myactive";
-      }
+      });</script>
+      <script>
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn")
+var rootElement = document.documentElement
+
+function scrollToTop() {
+
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
+scrollToTopBtn.addEventListener("click", scrollToTop)
+
+var mybutton = document.getElementById("scrollToTopBtn");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
       </script>
+
   </body>
 </html>

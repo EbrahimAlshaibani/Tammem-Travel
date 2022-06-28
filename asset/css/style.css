@@ -574,6 +574,22 @@ background-color: var(--white-color); }
 
 
 /* Footer */
+#scrollToTopBtn {
+  display: none;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 100%;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 40px;
+  width: 40px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  position: fixed;
+  outline: none;
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 body{
 	line-height: 1.5;

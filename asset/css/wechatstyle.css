@@ -44,6 +44,8 @@
   @media screen and (max-width: 650px) {
     .wcolumnn {
         width: 100%;
+        display: block;
+        margin: 10px;
       }
 
       .wcard img{
