@@ -113,7 +113,7 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " myactive";
-  setTimeout(showSlides, 2000);
+  setTimeout(showSlides, 4000);
 
 }
 

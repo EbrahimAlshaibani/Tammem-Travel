@@ -711,6 +711,9 @@ div.scard p{
   padding: 0;
   margin: 0;
 }
+div.scard img{
+  width: 100%;
+}
 }
 .copyrights{
   text-align: center;
@@ -823,6 +826,11 @@ font-weight: 600;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
   cursor: pointer;
   transition: 0.5s;
+}
+.scard img{
+  width: 100%;
+  max-width: 200px;
+  height: 80px;
 }
 .scard h3 {
   font-size: 20px;
