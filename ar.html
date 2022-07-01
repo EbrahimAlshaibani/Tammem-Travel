@@ -16,6 +16,8 @@
     
     <!-- Style -->
     <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/animations.css">
+
     <link href="asset/images/logo-min.png" rel="icon">
  <meta name="theme-color" content="#1d90d3">
  <!-- Windows Phone -->
@@ -148,8 +150,8 @@
     <section class="promise" style="padding-top: 120px ;">
 
       <div class="introduction">
-        <h1 class="tammem">تميم</h1><h1> للسفريات والسياحة</h1>
-        <p>التطوير المستمر لخدماتنا وابتكار الأفضل
+        <h1 class="tammem animations">تميم</h1><h1 class="animations"> للسفريات والسياحة</h1>
+        <p class="animations">التطوير المستمر لخدماتنا وابتكار الأفضل
             الحلول البديلة لتلبية متطلبات عملائنا وتحقيقها رضاهم مهنيا ومهنيا
             أن نكون الرواد في منطقة الشرق الأوسط في خدمات السفر والسياحة.</p>
       </div>
@@ -158,7 +160,7 @@
       <div class="row">
 
             <div class="col-sm-6 col-md-3">
-              <div class="card">
+              <div class="card animations">
                 <div class="cvp_img_container">
                   <img src="asset/images/promis.png" alt="Guidance" >
                     </div>
@@ -167,7 +169,7 @@
             </div>
           </div>
            <div class="col-sm-6 col-md-3">
-            <div class="card">
+            <div class="card animations">
               <div class="cvp_img_container">
                 <img src="asset/images/value.png" alt="Value" >
                   </div>
@@ -176,7 +178,7 @@
           </div>
         </div>
         <div class="col-sm-6 col-md-3">
-          <div class="card">
+          <div class="card animations">
             <div class="cvp_img_container">
               <img src="asset/images/service.png" alt="Service" >
                 </div>
@@ -185,7 +187,7 @@
         </div>
       </div>
       <div class="col-sm-6 col-md-3">
-        <div class="card">
+        <div class="card animations">
           <div class="cvp_img_container">
             <img src="asset/images/peace-of-mind.png" alt="Peace of Mind">
               </div>
@@ -201,14 +203,14 @@
   <section class="service-section">
     <div class="srow">
       <div class="section-heading">
-        <h2>خدمات</h2>
-        <p>نسعى لتقديم خدماتنا بجودة عالية لتجنب الأخطاء التي قد تربك عملائنا بسبب ظروف خاصة</p>
+        <h2 class="animations">خدمات</h2>
+        <p class="animations">نسعى لتقديم خدماتنا بجودة عالية لتجنب الأخطاء التي قد تربك عملائنا بسبب ظروف خاصة</p>
       </div>
    
     </div>
     <div class="srow">
       <div class="scolumn">
-        <div class="scard">
+        <div class="scard animations">
           <div class="sicon-wrapper">
             <i class="icon-ticket"></i>
           </div>
@@ -218,7 +220,7 @@
         </div>
       </div>
       <div class="scolumn">
-        <div class="scard">
+        <div class="scard animations">
           <div class="sicon-wrapper">
             <i class="icon-hotel"></i>
           </div>
@@ -228,7 +230,7 @@
         </div>
       </div>
       <div class="scolumn">
-        <div class="scard">
+        <div class="scard animations">
           <div class="sicon-wrapper">
             <i class="icon-file-o"></i>
           </div>
@@ -238,7 +240,7 @@
         </div>
       </div>
       <div class="scolumn">
-        <div class="scard">
+        <div class="scard animations">
           <div class="sicon-wrapper">
             <i class="icon-vcard"></i>
           </div>
@@ -248,7 +250,7 @@
         </div>
       </div>
       <div class="scolumn">
-        <div class="scard">
+        <div class="scard animations">
           <div class="sicon-wrapper">
             <i class="icon-bus"></i>
           </div>
@@ -258,7 +260,7 @@
         </div>
       </div>
       <div class="scolumn">
-        <div class="scard">
+        <div class="scard animations">
           <div class="sicon-wrapper">
             <i class=" icon-directions_car"></i>
           </div>
@@ -269,7 +271,7 @@
       </div>
 
       <div class="scolumn">
-        <div class="scard">
+        <div class="scard animations">
           <div class="sicon-wrapper">
             <i class=" icon-local_hospital"></i>
           </div>
@@ -288,8 +290,8 @@
   <section class="partners">
 
     <div class="container">
-      <h2>شركاؤنا</h2>
-      <section class="customer-logos slider">
+      <h2 class="animations">شركاؤنا</h2>
+      <section class="customer-logos slider animations">
         <div class="slide"><img src="asset/images/partners/1.png" alt=""></div>
         <div class="slide"><img src="asset/images/partners/2.png" alt=""></div>
         <div class="slide"><img src="asset/images/partners/3.png" alt=""></div>
@@ -418,6 +420,58 @@ function topFunction() {
 }
 
       </script>
+    </script>
 
+    <script>
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting){
+            document.querySelectorAll(".animations")[0].classList.add("fadeInTop");
+            document.querySelectorAll(".animations")[1].classList.add("fadeInTop");
+            document.querySelectorAll(".animations")[2].classList.add("fadeInBottom");
+          }
+        });
+      });
+      const observer2 = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting){
+            document.querySelectorAll(".animations")[3].classList.add("fadeInLeft");
+            document.querySelectorAll(".animations")[4].classList.add("fadeInLeft");
+            document.querySelectorAll(".animations")[5].classList.add("fadeInRight");
+            document.querySelectorAll(".animations")[6].classList.add("fadeInRight");
+          }
+        });
+      });
+      const observer3 = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting){
+            document.querySelectorAll(".animations")[7].classList.add("fadeInTop");
+            document.querySelectorAll(".animations")[8].classList.add("fadeInBottom");
+            document.querySelectorAll(".animations")[9].classList.add("fadeInLeft");
+            document.querySelectorAll(".animations")[10].classList.add("fadeInRight");
+            document.querySelectorAll(".animations")[11].classList.add("fadeInLeft");
+            document.querySelectorAll(".animations")[12].classList.add("fadeInRight");
+            document.querySelectorAll(".animations")[13].classList.add("fadeInLeft");
+            document.querySelectorAll(".animations")[14].classList.add("fadeInRight");
+            document.querySelectorAll(".animations")[15].classList.add("fadeInLeft");
+          }
+        });
+      });
+      const observer4 = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting){
+            document.querySelectorAll(".animations")[16].classList.add("fadeInTop");
+            document.querySelectorAll(".animations")[17].classList.add("fadeInBottom");
+
+          }
+        });
+      });
+
+      observer.observe(document.querySelector(".introduction"));
+      observer2.observe(document.querySelector(".promise"));
+      observer3.observe(document.querySelector(".srow"));
+      observer4.observe(document.querySelector(".partners"));
+
+    </script>
   </body>
 </html>
