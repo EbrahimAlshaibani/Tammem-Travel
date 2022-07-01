@@ -1,26 +1,26 @@
 .fadeInLeft{
-    -webkit-animation: fadeInLeft 1.2s both;
-    -moz-animation: fadeInLeft 1.2s both;
-    -o-animation: fadeInLeft 1.2s both;
-    animation: fadeInLeft 1.2s both;
+    -webkit-animation: fadeInLeft 1.5s both;
+    -moz-animation: fadeInLeft 1.5s both;
+    -o-animation: fadeInLeft 1.5s both;
+    animation: fadeInLeft 1.5s both;
 }
 .fadeInTop{
-    -webkit-animation: fadeInTop 1.2s both;
-    -moz-animation: fadeInTop 1.2s both;
-    -o-animation: fadeInTop 1.2s both;
-    animation: fadeInTop 1.2s both;
+    -webkit-animation: fadeInTop 1.5s both;
+    -moz-animation: fadeInTop 1.5s both;
+    -o-animation: fadeInTop 1.5s both;
+    animation: fadeInTop 1.5s both;
 }
 .fadeInRight{
-    -webkit-animation: fadeInRight 1.2s both;
-    -moz-animation: fadeInRight 1.2s both;
-    -o-animation: fadeInRight 1.2s both;
-    animation: fadeInRight 1.2s both;
+    -webkit-animation: fadeInRight 1.5s both;
+    -moz-animation: fadeInRight 1.5s both;
+    -o-animation: fadeInRight 1.5s both;
+    animation: fadeInRight 1.5s both;
 }
 .fadeInBottom{
-    -webkit-animation: fadeInBottom 1.2s both;
-    -moz-animation: fadeInBottom 1.2s both;
-    -o-animation: fadeInBottom 1.2s both;
-    animation: fadeInBottom 1.2s both;
+    -webkit-animation: fadeInBottom 1.5s both;
+    -moz-animation: fadeInBottom 1.5s both;
+    -o-animation: fadeInBottom 1.5s both;
+    animation: fadeInBottom 1.5s both;
 }
 @-webkit-keyframes fadeInLeft{
     0%{

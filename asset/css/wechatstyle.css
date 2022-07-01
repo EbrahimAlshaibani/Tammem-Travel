@@ -1,4 +1,6 @@
-
+body{
+  height: 0;
+}
 
   .wcolumnn {
     float: left;
