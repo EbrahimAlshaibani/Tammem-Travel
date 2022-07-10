@@ -451,8 +451,9 @@ background-color: var(--white-color); }
 }
 .mySlides img{
   padding-top: 130px;
-  height: 550px;
-  object-fit: fill;
+  height: 100vh;
+  object-fit: cover;
+  padding-bottom: 250px;
 }
 
 /* Position the "next button" to the right */
@@ -479,7 +480,6 @@ background-color: var(--white-color); }
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 .myactive, .dot:hover {
   background-color: #717171;
 }
@@ -601,6 +601,12 @@ background-color: var(--white-color); }
   }
   .card img{
     width: 100%;
+  }
+  .mySlides img{
+    padding-top: 130px;
+    height: 550px;
+    object-fit: fill;
+    padding-bottom: 0px;
   }
 }
 @media screen and (max-width: 600px) {
