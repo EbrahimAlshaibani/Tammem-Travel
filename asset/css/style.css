@@ -401,7 +401,7 @@ background-color: var(--white-color); }
 
 
 .hero {
-  height: 100vh;
+  height: 65vh;
   width: 100%;
   background-size: cover;
   background-position: center center;
@@ -451,7 +451,7 @@ background-color: var(--white-color); }
 }
 .mySlides img{
   padding-top: 130px;
-  height: 80%;
+  height: 550px;
   object-fit: cover;
 }
 
