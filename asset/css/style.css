@@ -452,7 +452,7 @@ background-color: var(--white-color); }
 .mySlides img{
   padding-top: 130px;
   height: 550px;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 /* Position the "next button" to the right */
@@ -471,8 +471,8 @@ background-color: var(--white-color); }
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
