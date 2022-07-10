@@ -450,7 +450,8 @@ background-color: var(--white-color); }
   top: 0;
 }
 .mySlides img{
-  height: 100vh;
+  padding-top: 130px;
+  height: 80%;
   object-fit: cover;
 }
 
