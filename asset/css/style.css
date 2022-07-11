@@ -806,7 +806,7 @@ div.scard img{
   text-align: center;
   font-size: 24px;
   color: var(--main-color);
-  font-weight: 600;
+  color: #000;
 }
 .promise p{
   text-align: center;
