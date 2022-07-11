@@ -27,6 +27,13 @@ function topFunction() {
 
 
 
+const preloader = document.querySelector('#preloader');
+if (preloader) {
+  window.addEventListener('load', () => {
+	preloader.remove();
+  });
+}
+
 
 
 
@@ -154,13 +161,6 @@ function showSlides(n) {
 
 }
 
-
-const preloader = document.querySelector('#preloader');
-if (preloader) {
-  window.addEventListener('load', () => {
-	preloader.remove();
-  });
-}
 
 
 
