@@ -479,6 +479,7 @@ background-color: var(--white-color); }
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  display: none;
 }
 .myactive, .dot:hover {
   background-color: #717171;
@@ -608,6 +609,9 @@ background-color: var(--white-color); }
     object-fit: fill;
     padding-bottom: 0px;
   }
+  .promise{
+    padding-top: 0px;
+  }
 }
 @media screen and (max-width: 600px) {
   .columnn {
@@ -671,6 +675,8 @@ ul{
 .footer{
 	background-color: var(--secound-color);
     padding: 70px 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 .footer-col{
    width: 20%;
@@ -781,7 +787,7 @@ div.scard img{
 }
 .introduction .tammem{
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--main-color);
 }
 .introduction h1{
@@ -913,9 +919,7 @@ font-weight: 600;
   color: #f0f0f0;
 }
 @media screen and (min-width: 768px) {
-  section {
-    padding: 0 2em;
-  }
+ 
   .scolumn {
     flex: 0 50%;
     max-width: 50%;
@@ -931,51 +935,10 @@ font-weight: 600;
   }
 }
 /*partners*/
-.partners .container{
-  padding: 20px;
-}
+
 .partners h2{
   text-align: center;
   padding: 20px;
-}
-.partners .slick-slide{
-  margin: 0 20px;
-}
-.partners  .slick-slide img{
-  width: 100%;
-}
-.partners .slick-slider{
-  position: relative;
-  display: block;
-  box-sizing: border-box;
-}
-.partners .slick-list{
-  position: relative;
-  display: block;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-.partners .slick-track{
-  position: relative;
-  top: 0;
-  left: 0;
-  display: block;
-}
-.partners  .slick-slide{
-  display: none;
-  float: left;
-  height: 100%;
-  min-height: 1px;
-}
-.partners .slick-slide img{
-  display: block;
-}
-.partners .slick-initialized .slick-slide{
-  display: block;
-}
-.partners .copy{
-  padding-top: 250px;
 }
 .partners h2{
   font-weight: 600;
@@ -1058,4 +1021,148 @@ table th {
   table td:last-child {
     border-bottom: 0;
   }
+}
+
+/*cool place*/
+
+.menu__container {
+  width: 200px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 10px 40px 2px rgba(0,0,0,0.3);
+  background-image: url(../images/tameemprofile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform-origin: center center 0px;
+  transition: all 0.5s ease-out;
+  animation-name: animate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform: perspective(1000px) rotateX(35deg) rotateY(4deg) rotateZ(-30deg);
+  z-index: 1;
+  position: relative;
+
+}
+.menu__container:hover {
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+.menu__container .menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
+  height: 100%;
+  color: #fff;
+}
+.menu a{
+  padding: 10px;
+  border: var(--main-color) solid 2px;
+  color: var(--main-color);
+  background-color: var(--white-color);
+  border-radius: 10px;
+}
+.menu a:hover{
+  border: var(--white-color) solid 2px;
+  color: var(--white-color);
+  background-color: var(--main-color);
+}
+.partners h1{
+  text-align: center;
+  color: var(--main-color);
+  width: 600;
+  margin-top: 50px;
+}
+@-moz-keyframes animate {
+  0% {
+    margin-top: 10vh;
+  }
+  50% {
+    margin-top: 8vh;
+  }
+  100% {
+    margin-top: 10vh;
+  }
+}
+@-webkit-keyframes animate {
+  0% {
+    margin-top: 10vh;
+  }
+  50% {
+    margin-top: 8vh;
+  }
+  100% {
+    margin-top: 10vh;
+  }
+}
+@-o-keyframes animate {
+  0% {
+    margin-top: 10vh;
+  }
+  50% {
+    margin-top: 8vh;
+  }
+  100% {
+    margin-top: 10vh;
+  }
+}
+@keyframes animate {
+  0% {
+    margin-top: 10vh;
+  }
+  50% {
+    margin-top: 8vh;
+  }
+  100% {
+    margin-top: 10vh;
+  }
+}
+/*new partners*/
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 6));
+  }
+}
+.Partnerslider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.Partnerslider::before, .Partnerslider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.Partnerslider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.Partnerslider::before {
+  left: 0;
+  top: 0;
+}
+.Partnerslider .Partnerslider-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 12);
+}
+.Partnerslider .Partnerslide {
+  height: 100px;
+  width: 250px;
 }
