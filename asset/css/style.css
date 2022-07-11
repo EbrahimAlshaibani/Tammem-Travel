@@ -815,6 +815,8 @@ div.scard img{
 .promise h1{
   text-align: center;
   font-size: 24px;
+  color: var(--main-color);
+  font-weight: 600;
 }
 .promise p{
   text-align: center;
@@ -1139,7 +1141,7 @@ table th {
   width: 100%;
 }
 .Partnerslider::before, .Partnerslider::after {
-  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 20%);
   content: "";
   height: 100px;
   position: absolute;
@@ -1156,11 +1158,21 @@ table th {
   top: 0;
 }
 .Partnerslider .Partnerslider-track {
-  animation: scroll 40s linear infinite;
+  animation: scroll 30s linear infinite;
   display: flex;
   width: calc(250px * 12);
 }
 .Partnerslider .Partnerslide {
   height: 100px;
   width: 250px;
+}
+.line{
+  width: 70px ;
+  height: 3px;
+  margin-top: 12px;
+  margin-bottom: 15px;
+  background-color: #17628d;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
