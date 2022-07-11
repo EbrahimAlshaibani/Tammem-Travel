@@ -11,9 +11,7 @@
 }
 body {
   font-family: main ,"Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  background-color: #fff;
-  background-image: url(../images/bg1.png);
-  height: 200vh;
+  background-image: url("https://www.freepnglogos.com/uploads/cloud-png/white-big-cloud-png-27.png");
   position: relative; }
   body:before {
     content: "";
