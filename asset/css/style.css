@@ -604,7 +604,7 @@ background-color: var(--white-color); }
   .mySlides img{
     padding-top: 130px;
     height: 550px;
-    object-fit: fill;
+    object-fit: cover;
     padding-bottom: 0px;
   }
   .promise{
