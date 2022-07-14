@@ -1022,7 +1022,7 @@ table th {
   background-position: center;
   transform-origin: center center 0px;
   transition: all 0.5s ease-out;
-  animation-name: animate;
+  /* animation-name: animate; */
   animation-duration: 3s;
   animation-iteration-count: infinite;
   transform: perspective(1000px) rotateX(35deg) rotateY(4deg) rotateZ(-30deg);
