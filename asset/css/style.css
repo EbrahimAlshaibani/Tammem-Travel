@@ -451,7 +451,7 @@ background-color: var(--white-color); }
   padding-top: 130px;
   height: 100vh;
   object-fit: cover;
-  padding-bottom: 250px;
+  padding-bottom: 150px;
 }
 
 /* Position the "next button" to the right */
@@ -601,15 +601,7 @@ background-color: var(--white-color); }
   .card img{
     width: 100%;
   }
-  .mySlides img{
-    padding-top: 130px;
-    height: 550px;
-    object-fit: cover;
-    padding-bottom: 0px;
-  }
-  .promise{
-    padding-top: 0px;
-  }
+
 }
 @media screen and (max-width: 600px) {
   .columnn {
