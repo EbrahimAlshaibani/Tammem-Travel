@@ -1,4 +1,4 @@
-.fadeInLeft{
+/* .fadeInLeft{
     -webkit-animation: fadeInLeft 1.5s both;
     -moz-animation: fadeInLeft 1.5s both;
     -o-animation: fadeInLeft 1.5s both;
@@ -58,7 +58,6 @@
         transform: translateX(0);
     }
 }
-/*top*/
 @-webkit-keyframes fadeInTop{
     0%{
         opacity: 0;
@@ -95,7 +94,6 @@
         transform: translateY(0);
     }
 }
-/*left*/
 @-webkit-keyframes fadeInRight{
     0%{
         opacity: 0;
@@ -132,7 +130,6 @@
         transform: translateY(0);
     }
 }
-/*bottom*/
 @-webkit-keyframes fadeInBottom{
     0%{
         opacity: 0;
@@ -168,4 +165,4 @@
         opacity: 1;
         transform: translateY(0);
     }
-}
+} */
