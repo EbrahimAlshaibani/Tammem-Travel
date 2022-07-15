@@ -24,11 +24,14 @@
     <link rel="stylesheet" href="asset/css/style.css">
     <link rel="stylesheet" href="asset/css/animations.css">
     <link href="asset/images/logo-min.png" rel="icon">
- <meta name="theme-color" content="#1d90d3">
- <!-- Windows Phone -->
- <meta name="msapplication-navbutton-color" content="#1d90d3"> 
-<!-- iOS Safari -->
- <meta name="apple-mobile-web-app-status-bar-style" content="#1d90d3">
+    <link href="asset/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="asset/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  
+    <meta name="theme-color" content="#1d90d3">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#1d90d3"> 
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1d90d3">
     <title>تميم للسفريات</title>
   </head>
   <body>
@@ -101,39 +104,62 @@
     </div>
     <div id="particles-js"></div>
 
-    <div class="hero">
-
-
-      <div class="slideshow-container">
-
-        <div class="mySlides myfade">
-          <img src="asset/images/one-min.jpg" style="width:100%">
-          <div class="text">Caption Text</div>
+      <!-- ======= Hero Section ======= -->
+      <section id="hero">
+        <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    
+          <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+    
+          <div class="carousel-inner" role="listbox">
+    
+            <!-- Slide 1 -->
+            <div class="carousel-item active" style="background-image: url(asset/images/one-min.jpg)">
+              <div class="carousel-container">
+                <div class="container">
+                  <h2 class="animate__animated animate__fadeInDown">مرحبا بك في <span>تميم للسفريات</span></h2>
+                  <p class="animate__animated animate__fadeInUp">نحن نقدم لك الكثير من الخدمات المميزه والتنافسية باسعار مغرية وخدمة ممتازة</p>
+                  <a href="ar/services.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">تعرف اكثر</a>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Slide 2 -->
+            <div class="carousel-item" style="background-image: url(asset/images/two-min.jpg)">
+              <div class="carousel-container">
+                <div class="container">
+                  <h2 class="animate__animated animate__fadeInDown">جاهز للسفر؟ سافر معنا</h2>
+                  <p class="animate__animated animate__fadeInUp">تميم للسفريات يوفر لك جميع ما تحتاجة للسفر من تامين صحي ورخص قيادة دولية وتاجير السيارات واكثر</p>
+                  <a href="ar/services.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">تعرف اكثر</a>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Slide 3 -->
+            <div class="carousel-item" style="background-image: url(asset/images/three-min.jpg)">
+              <div class="carousel-container">
+                <div class="container">
+                  <h2 class="animate__animated animate__fadeInDown">احجز مقعدك الان</h2>
+                  <p class="animate__animated animate__fadeInUp"> يمكنك حجز تذكرتك اونلاين عبر الواتساب او الويشات وتصل لك تذكرتك فورا او عبر زيارة المكتب</p>
+                  <a href="ar/contactus.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">احجز الان</a>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+    
+          <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+          </a>
+    
+          <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+          </a>
+    
         </div>
-        
-        <div class="mySlides myfade">
-          <img src="asset/images/two-min.jpg" style="width:100%">
-          <div class="text">Caption Two</div>
-        </div>
-        
-        <div class="mySlides myfade">
-          <img src="asset/images/three-min.jpg" style="width:100%">
-          <div class="text">Caption Three</div>
-        </div>
-        
-        </div>
-        <br>
-        <div style="text-align:center">
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-        </div>
-
-
-    </div>
+      </section><!-- End Hero -->
     
 
-    <section class="promise" style="padding-top: 150px;">
+    <section class="promise animate__animated animate__fadeInDown">
 
       <div class="introduction">
         <h1 class="tammem animations">تميم <div class="line"></div></h1>
@@ -415,56 +441,7 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script><!-- Chrome, Firefox OS and Opera -->
    <script type="text/javascript" src="asset/js/particles.js"></script>
    <script type="text/javascript" src="asset/js/app.js"></script>
-    <script>
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if(entry.isIntersecting){
-            document.querySelectorAll(".animations")[0].classList.add("fadeInTop");
-            document.querySelectorAll(".animations")[1].classList.add("fadeInTop");
-            document.querySelectorAll(".animations")[2].classList.add("fadeInBottom");
-          }
-        });
-      });
-      const observer2 = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if(entry.isIntersecting){
-            document.querySelectorAll(".animations")[3].classList.add("fadeInLeft");
-            document.querySelectorAll(".animations")[4].classList.add("fadeInLeft");
-            document.querySelectorAll(".animations")[5].classList.add("fadeInRight");
-            document.querySelectorAll(".animations")[6].classList.add("fadeInRight");
-          }
-        });
-      });
-      const observer3 = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if(entry.isIntersecting){
-            document.querySelectorAll(".animations")[7].classList.add("fadeInTop");
-            document.querySelectorAll(".animations")[8].classList.add("fadeInBottom");
-            document.querySelectorAll(".animations")[9].classList.add("fadeInLeft");
-            document.querySelectorAll(".animations")[10].classList.add("fadeInRight");
-            document.querySelectorAll(".animations")[11].classList.add("fadeInLeft");
-            document.querySelectorAll(".animations")[12].classList.add("fadeInRight");
-            document.querySelectorAll(".animations")[13].classList.add("fadeInLeft");
-            document.querySelectorAll(".animations")[14].classList.add("fadeInRight");
-            document.querySelectorAll(".animations")[15].classList.add("fadeInLeft");
-          }
-        });
-      });
-      const observer4 = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if(entry.isIntersecting){
-            document.querySelectorAll(".animations")[16].classList.add("fadeInTop");
-            document.querySelectorAll(".animations")[17].classList.add("fadeInBottom");
-
-          }
-        });
-      });
-
-      observer.observe(document.querySelector(".introduction"));
-      observer2.observe(document.querySelector(".promise"));
-      observer3.observe(document.querySelector(".srow"));
-      observer4.observe(document.querySelector(".partners"));
-
-    </script>
+   <script src="asset/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="asset/vendor/main.js"></script>
   </body>
 </html>

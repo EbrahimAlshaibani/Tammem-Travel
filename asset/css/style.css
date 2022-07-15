@@ -1328,10 +1328,10 @@ p{
 }
 #hero .carousel-indicators li.active {
   opacity: 1;
-  background: #5cb874;
+  background: var(--main-color);
 }
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family: main;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -1343,10 +1343,10 @@ p{
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  background: #5cb874;
+  background: var(--main-color);
 }
 #hero .btn-get-started:hover {
-  background: #6ec083;
+  background: #3fb8e4;
 }
 @media (max-width: 992px) {
   #hero {
@@ -1370,4 +1370,8 @@ p{
   #hero {
     height: 120vh;
   }
+}
+
+*{
+  font-family: main;
 }
