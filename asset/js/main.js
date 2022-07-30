@@ -34,8 +34,18 @@ if (preloader) {
   });
 }
 
-
-
+//animation on scroll
+(function() {
+  "use strict";
+  window.addEventListener('load', () => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    })
+  });
+})()
 
 
 
@@ -160,8 +170,3 @@ function showSlides(n) {
   setTimeout(showSlides, 4000);
 
 }
-
-
-
-
-
