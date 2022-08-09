@@ -730,11 +730,12 @@ ul{
   .footer-col{
     width: 100%;
 }
+
 div.scard h3{
   font-size: 18px;
 }
 div.scard p{
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 200;
   padding: 0;
   margin: 0;
@@ -851,10 +852,15 @@ font-weight: 600;
   background: linear-gradient(#ffffff 50%, var(--main-color) 50%);
   background-size: 100% 200%;
   background-position: 0 2.5%;
-  border-radius: 5px;
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 15px rgba(0, 162, 255, 0.12);
   cursor: pointer;
   transition: 0.5s;
+  border-radius: 30px;
+  border: 1px var(--main-color) solid;
+  /* border-top-left-radius: 30px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 30px;  */
 }
 .scard img{
   width: 100%;
@@ -898,7 +904,7 @@ font-weight: 600;
   color: #ffffff;
 }
 .scard:hover p {
-  color: #f0f0f0;
+  color: #fff;
 }
 @media screen and (min-width: 768px) {
  
@@ -1115,7 +1121,7 @@ table th {
 }
 .Partnerslider {
   background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  /* box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.125); */
   height: 100px;
   margin: auto;
   overflow: hidden;
@@ -1123,7 +1129,7 @@ table th {
   width: 100%;
 }
 .Partnerslider::before, .Partnerslider::after {
-  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 20%);
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 10%);
   content: "";
   height: 100px;
   position: absolute;
@@ -1228,12 +1234,12 @@ p{
 
 
 #particles-js {
-  display:none;
+  display: none;
   position: absolute;
   width: 100%;
   height: 100%;
   background: #ffffff;
-  z-index: -100;
+  z-index: 0;
 }
 
 #hero {

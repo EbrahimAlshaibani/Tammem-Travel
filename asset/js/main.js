@@ -23,11 +23,11 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-//diable right click
-document.addEventListener("contextmenu", function(event){
-  event.preventDefault();
-  alert('Sorry You cannot do that');    
-  }, false);
+//disable right click
+// document.addEventListener("contextmenu", function(event){
+//   event.preventDefault();
+//   alert('Sorry You cannot do that');    
+//   }, false);
 
 
 
