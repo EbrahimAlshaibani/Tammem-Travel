@@ -722,11 +722,24 @@ ul{
 .fb-like-btn{
  margin: 10px;
 }
-.footer .icon-wechat,.icon-facebook,.icon-envelope,.icon-whatsapp{
+/* .footer .icon-wechat,.icon-facebook,.icon-envelope,.icon-whatsapp{
  color: var(--main-color);
+ background-color: #ffffff69;
+ padding: 10px 20px;
  transition: 0.5s;
 }
 .footer-col .icon-wechat:hover,.icon-facebook:hover,.icon-envelope:hover,.icon-whatsapp:hover{
+  background-color: #004d6969;
+  padding: 10px 20px;
+  border-radius: 100px;
+ } */
+ .social-links i{
+  padding: 10px;
+  border-radius: 40px;
+  color: var(--white-color);
+  transition: 0.5s;
+ }
+ .social-links i:hover{
   background-color: #004d6969;
   padding: 10px 20px;
   border-radius: 100px;
