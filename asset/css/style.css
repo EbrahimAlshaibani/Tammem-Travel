@@ -653,7 +653,10 @@ ul{
 	list-style: none;
 }
 .footer{
-	background-color: var(--secound-color);
+    background-image: url(../images/footer-background6cb4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding: 70px 0;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
@@ -703,7 +706,7 @@ ul{
 	height: 40px;
   font-family: main;
 	width: 40px;
-	background-color: rgb(255, 255, 255);
+	background-color: rgba(34, 23, 23, 0);
 	margin:0 10px 10px 0;
 	text-align: center;
 	line-height: 40px;
@@ -711,9 +714,7 @@ ul{
 	color: #ffffff;
 	transition: all 0.5s ease;
 }
-.footer-col .social-links a:hover{
-	background-color: var(--white-color);
-}
+
 .footer img{
   height: 80px;
   display: block;
@@ -721,7 +722,15 @@ ul{
 .fb-like-btn{
  margin: 10px;
 }
-
+.footer .icon-wechat,.icon-facebook,.icon-envelope,.icon-whatsapp{
+ color: var(--white-color);
+ transition: 0.5s;
+}
+.footer .icon-wechat:hover,.icon-facebook:hover,.icon-envelope:hover,.icon-whatsapp:hover{
+  background-color: #004d6969;
+  padding: 10px 20px;
+  border-radius: 100px;
+ }
 /*responsive*/
 @media(max-width: 767px){
   .footer-col{
