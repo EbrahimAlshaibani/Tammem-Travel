@@ -723,10 +723,10 @@ ul{
  margin: 10px;
 }
 .footer .icon-wechat,.icon-facebook,.icon-envelope,.icon-whatsapp{
- color: var(--white-color);
+ color: var(--main-color);
  transition: 0.5s;
 }
-.footer .icon-wechat:hover,.icon-facebook:hover,.icon-envelope:hover,.icon-whatsapp:hover{
+.footer-col .icon-wechat:hover,.icon-facebook:hover,.icon-envelope:hover,.icon-whatsapp:hover{
   background-color: #004d6969;
   padding: 10px 20px;
   border-radius: 100px;
