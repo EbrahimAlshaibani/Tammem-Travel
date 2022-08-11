@@ -89,7 +89,7 @@ scroll-behavior: smooth;
     font-size: 0.8rem; }
 
 .site-navbar-top {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(0, 153, 255, 0.5);
 background-color: var(--white-color); }
 
 .site-navbar {
@@ -1261,7 +1261,7 @@ p{
 }
 #hero .carousel-item::before {
   content: "";
-  background-color: rgba(45, 80, 103, 0.8);
+  background-color: rgba(45, 80, 103, 0.65);
 }
 #hero .carousel-container {
   display: flex;
@@ -1318,10 +1318,14 @@ p{
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid var(--white-color);
+
 }
-#hero .carousel-control-next-icon:hover, #hero .carousel-control-prev-icon:hover {
+#hero .carousel-control-next-icon:hover, #hero 
+.carousel-control-prev-icon:hover {
   background: rgba(255, 255, 255, 0.3);
   color: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--main-color);
 }
 #hero .carousel-indicators li {
   cursor: pointer;
