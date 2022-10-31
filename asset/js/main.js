@@ -1,3 +1,15 @@
+
+let scroller = document.querySelector(".scroller");
+let pageHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+window.addEventListener("scroll",()=>{
+    let scrollTop = document.documentElement.scrollTop;
+    scroller.style.width = `${(scrollTop/ pageHeight)*100}%`;
+});  
+
+
+
+
+
 var scrollToTopBtn = document.getElementById("scrollToTopBtn")
 var rootElement = document.documentElement
 

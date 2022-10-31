@@ -1437,3 +1437,10 @@ p{
 *{
   font-family: main;
 }
+
+.scroller{
+  position: fixed;
+  background-color: #1EAEE4;
+  z-index: 99999;
+  height: 5px;
+}
